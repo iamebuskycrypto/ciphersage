@@ -6,12 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "npx hardhat run scripts/deploy.ts --network arb-sepolia",
+    "compile": "npx hardhat compile"
   },
   "dependencies": {
+    "@cofhe/sdk": "^0.5.2",
+    "@fhenixprotocol/cofhe-contracts": "^0.1.3",
+    "@rainbow-me/rainbowkit": "^2.2.11",
+    "@tanstack/react-query": "^5.100.9",
+    "ethers": "^6.16.0",
+    "fhenixjs": "^0.4.1",
+    "framer-motion": "^12.38.0",
     "next": "16.2.5",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "viem": "^2.48.8",
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
