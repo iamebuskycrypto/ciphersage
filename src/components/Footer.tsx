@@ -62,7 +62,14 @@ export function Footer() {
         {/* Bottom bar */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '24px', borderTop: '1px solid rgba(124,58,237,0.08)', flexWrap: 'wrap', gap: '12px' }}>
           <p style={{ color: '#1E293B', fontFamily: 'Inter', fontSize: '12px' }}>
-            © 2025 CipherSage · Community project · Not officially affiliated with Fhenix Protocol
+            © 2025 CipherSage · Built by{' '}
+            <a href="https://x.com/iamebusky" target="_blank" rel="noopener noreferrer"
+              style={{ color: '#A78BFA', textDecoration: 'none', fontWeight: 600 }}
+              onMouseEnter={e => (e.currentTarget.style.color = '#34D399')}
+              onMouseLeave={e => (e.currentTarget.style.color = '#A78BFA')}>
+              @iamebusky
+            </a>
+            {' '}· Not officially affiliated with Fhenix Protocol
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#34D399', animation: 'pulse-ring 2.5s infinite' }} />
